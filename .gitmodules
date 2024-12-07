@@ -19,3 +19,12 @@
 [submodule "pack/vendor/start/vimtex"]
 	path = pack/vendor/start/vimtex
 	url = https://github.com/lervag/vimtex.git
+[submodule "pack/vendor/start/vim-surround"]
+	path = pack/vendor/start/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "pack/vendor/start/vim-repeat"]
+	path = pack/vendor/start/vim-repeat
+	url = https://github.com/tpope/vim-repeat.git
+[submodule "pack/vendor/start/vim-commentary"]
+	path = pack/vendor/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
