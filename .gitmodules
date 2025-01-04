@@ -28,3 +28,6 @@
 [submodule "pack/vendor/start/vim-commentary"]
 	path = pack/vendor/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
+[submodule "pack/vendor/opt/YouCompleteMe"]
+	path = pack/vendor/opt/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe.git
