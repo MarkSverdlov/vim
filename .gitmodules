@@ -31,3 +31,9 @@
 [submodule "pack/vendor/opt/YouCompleteMe"]
 	path = pack/vendor/opt/YouCompleteMe
 	url = https://github.com/ycm-core/YouCompleteMe.git
+[submodule "pack/vendor/start/vim-airline"]
+	path = pack/vendor/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "pack/vendor/start/vim-airline-themes"]
+	path = pack/vendor/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
