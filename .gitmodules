@@ -46,3 +46,6 @@
 [submodule "pack/vendor/start/gruvbox"]
 	path = pack/vendor/start/gruvbox
 	url = https://github.com/gruvbox-community/gruvbox.git
+[submodule "pack/vendor/start/ultisnips"]
+	path = pack/vendor/start/ultisnips
+	url = https://github.com/SirVer/ultisnips
