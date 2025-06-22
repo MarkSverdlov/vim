@@ -15,7 +15,7 @@ snippet rnc "\renewcommand{}{}" b
 endsnippet
 
 snippet inn "\input{} intended for use in FMF documents" bA
-\input{${1:~/dotfiles/config/latex/templates/}$2}$0
+\input{${1:~/dotfiles/latex/templates/}$2}$0
 endsnippet
 # END PREAMBLE SNIPPETS
 
@@ -32,10 +32,6 @@ endsnippet
 
 snippet sss "New subsubsection" bA
 \subsubsection{$1}$0
-endsnippet
-
-snippet ns "\newsec{} (for equation sheet sections)" bA
-\newsec{$1}$0
 endsnippet
 
 snippet toc "\tableofcontents" b
@@ -98,28 +94,3 @@ snippet hrr "\hyperref[label]{display name} (for referencing labeled sections)" 
 endsnippet
 # --------------------------------------------- #
 # END HYPERLINK SNIPPETS
-
-
-# BEGIN SPACING SNIPPETS
-# --------------------------------------------- #
-snippet "([vhm])s" "(vhm)space (various spacing commands in one regex)" r
-\\`!p snip.rv = match.group(1)`space{$1}$0
-endsnippet
-
-snippet "vs([1-9])" "vspace with predefined spacing" rA
-\\vspace{0.`!p snip.rv = match.group(1)`ex}
-endsnippet
-
-snippet hpp "\hphantom{}" iA
-\hphantom{${1:${VISUAL:}}}$0
-endsnippet
-
-snippet prr "\hfill-like fuctionality in math environments. Used in equation sheets" A
-& \pushright{$1}\\\\$0
-endsnippet
-
-snippet tls "\textls[]{}" i
-\textls[$1]{${2:${VISUAL:}}}$0
-endsnippet
-# --------------------------------------------- #
-# END SPACING SNIPPETS

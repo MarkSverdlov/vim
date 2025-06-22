@@ -2,37 +2,22 @@
 
 priority -1
 
-# snippet "(^|[\W])'"  "single quotation marks" rA
-# `!p snip.rv = match.group(1)`'${1:${VISUAL:}}'$0
-# endsnippet
+snippet "(^|[\W])'"  "single quotation marks" r
+`!p snip.rv = match.group(1)`'${1:${VISUAL:}}'$0
+endsnippet
 
-snippet ' "single quotation marks" A
+snippet ' "single quotation marks"
 '${1:${VISUAL:}}'$0
 endsnippet
 
-# snippet "(^|[\W])\""  "double quotation marks" rA
-# snippet "(^|[\W])\""  "double quotation marks" rA
-# `!p snip.rv = match.group(1)`"${1:${VISUAL:}}"$0
-# endsnippet
-# `!p snip.rv = match.group(1)`"${1:${VISUAL:}}"$0
-# endsnippet
-
-snippet ( "Paired parentheses ()" iA 
+snippet ( "Paired parentheses ()" i 
 (${1:${VISUAL:}})$0
 endsnippet
 
-snippet [ "Paired square brackets []" iA
+snippet [ "Paired square brackets []" i
 [${1:${VISUAL:}}]$0
 endsnippet
 
-snippet { "Paired curly brackets {}" iA
+snippet { "Paired curly brackets {}" i
 {${1:${VISUAL:}}}$0
-endsnippet
-
-# snippet "(^|[\W])`"  "Back ticks" rA
-# `!p snip.rv = match.group(1)`\`${1:${VISUAL:}}\`$0
-# endsnippet
-
-snippet -- "Commented line with a bunch of dashes ----------------- " bA
-# --------------------------------------------- #
 endsnippet

@@ -1,5 +1,5 @@
 snippet "(^|[^a-zA-Z\\])mm" "Inline math $ $" rA
-`!p snip.rv = match.group(1)`\$ ${1:${VISUAL:}} \$$0
+`!p snip.rv = match.group(1)`\(${1:${VISUAL:}}\) $0
 endsnippet
 
 # Various environments
@@ -37,13 +37,6 @@ snippet itt "Itemize environment" bA
 	\item $0
 
 \end{itemize}
-endsnippet
-
-snippet rit "Reversed itemize environment, used to split up an existing itemize environment" b
-\end{itemize}
-
-$0
-\begin{itemize}
 endsnippet
 
 snippet enn "Enumerate environment" bA
@@ -100,10 +93,4 @@ snippet mint "Minted environment" b
 \begin{minted}{$1}
 $0    
 \end{minted}
-endsnippet
-
-snippet title "mytitlepage environment for FMF documents" bA
-\begin{mytitlepage}{${1:title}}{${2:date}}
-	$0
-\end{mytitlepage}
 endsnippet
