@@ -1,0 +1,50 @@
+snippet prem "My preamble"
+\documentclass{amsart}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsthm, amsmath, amssymb, amsfonts} % general mathmode commands
+\usepackage{bm} % for \bm
+\usepackage{stmaryrd} % for \nnearrow
+\usepackage{cancel} % for \cancel
+\usepackage{breqn} % automatic line breaks in equations
+\usepackage[margin=2.5cm]{geometry} % for page layout
+\usepackage{cancel} % for \cancel
+\usepackage{algorithm2e} % for algorithms
+\usepackage{bbm} % for \mathbbm{1}
+\usepackage{mathtools} % for \coloneq
+\usepackage{hyperref}
+\usepackage{nicefrac}
+\usepackage{float}
+\usepackage{biblatex}
+\usepackage{lipsum}
+\usepackage{placeins}
+\usepackage{booktabs}
+\usepackage{xcolor,colortbl}
+\usepackage{makecell}
+\RestyleAlgo{ruled}
+
+% \new theorems definition
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}[section]{Definition}
+
+\theoremstyle{definition}
+\newtheorem{example}[section]{Example}
+\newtheorem{conjecture}[section]{Conjecture}
+
+\theoremstyle{remark}
+\newtheorem{remark}[section]{Remark}
+
+% \newcommand
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator{\err}{Err}
+\DeclareMathOperator{\softmax}{softmax}
+\newcommand{\diff}{\mathrm{d}}
+\title{Notes For Stochastic Differential Equations}
+\author{Mark Sverdlov}
+\date{May 2025}
+endsnippet

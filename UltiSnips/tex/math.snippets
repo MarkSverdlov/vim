@@ -12,7 +12,7 @@ snippet "([\w]|[\}\)\]\|'])'" "Superscript" rA
 endsnippet
 
 context "math()"
-snippet "([a-zA-Z]|[\}\)\]\|']);" "Subscript" rA
+snippet "([\w]|[\}\)\]\|']);" "Subscript" rA
 `!p snip.rv = match.group(1)`_{${1:${VISUAL:}}}$0
 endsnippet
 
@@ -143,13 +143,38 @@ endsnippet
 # BEGIN LIMITS
 # --------------------------------------------- #
 context "math()"
-snippet "([^\w\\])lM" "\limits{} with only lower limit" rA
-`!p snip.rv = match.group(1)`\limits_{$1}$0
+snippet "([^\w\\])lm" "\lim_{}" rA
+`!p snip.rv = match.group(1)`\lim_{$1}$0
 endsnippet
 
 context "math()"
-snippet "([^\w\\])lmm" "\limits{}{} with upper and lower limit" rA
-`!p snip.rv = match.group(1)`\limits_{$1}{$2}$0
+snippet "([^\w\\])li" "\liminf_{}" rA
+`!p snip.rv = match.group(1)`\liminf_{$1}$0
+endsnippet
+
+context "math()"
+snippet "([^\w\\])ls" "\limsup_{}" rA
+`!p snip.rv = match.group(1)`\limsup_{$1}$0
+endsnippet
+
+context "math()"
+snippet "([^\w\\])lI" "\liminf" rA
+`!p snip.rv = match.group(1)`\liminf$0
+endsnippet
+
+context "math()"
+snippet "([^\w\\])lS" "\limsup" rA
+`!p snip.rv = match.group(1)`\limsup$0
+endsnippet
+
+context "math()"
+snippet "([^\w\\])lu" "\nnearrow" rA
+`!p snip.rv = match.group(1)`\nnearrow$0
+endsnippet
+
+context "math()"
+snippet "([^\w\\])ld" "\ssearrow" rA
+`!p snip.rv = match.group(1)`\ssearrow$0
 endsnippet
 # --------------------------------------------- #
 # END LIMITS
@@ -191,6 +216,21 @@ snippet >> "\rightarrow" Ai
 \rightarrow
 endsnippet
 
+context "math()"
+snippet >? "\mapsto" Ai
+\mapsto
+endsnippet
+
+context "math()"
+snippet lq "\leq" Ai
+\leq
+endsnippet
+
+context "math()"
+snippet gq "\geq" Ai
+\geq
+endsnippet
+
 snippet lra "\leftrightarrow" A
 \leftrightarrow 
 endsnippet
@@ -198,6 +238,26 @@ endsnippet
 context "math()"
 snippet "([^a-zA-Z0-9\\])df" "\diff" rA
 `!p snip.rv = match.group(1)`\diff 
+endsnippet
+
+context "math()"
+snippet "([^a-zA-Z0-9\\])ii" "\in" rA
+`!p snip.rv = match.group(1)`\in
+endsnippet
+
+context "math()"
+snippet "([^a-zA-Z0-9\\])ss" "\subset" rA
+`!p snip.rv = match.group(1)`\subset
+endsnippet
+
+context "math()"
+snippet qh "\qedhere" bA
+\qedhere
+endsnippet
+
+context "math()"
+snippet EE "\mathrm{E}" iA
+\mathrm{E}
 endsnippet
 
 snippet "([lcvd])dd" "(lcvd)dots (various dots commands in one regex)" rA
@@ -208,6 +268,36 @@ snippet xx "\cross" A
 \times 
 endsnippet
 
+context "math()"
+snippet jj "\cap" A
+\cap
+endsnippet
+
+context "math()"
+snippet bjj "\bigcap_{}^{}" A
+\bigcap_{$1}^{$2}$0
+endsnippet
+
+context "math()"
+snippet bJ "\bigcap_{}" A
+\bigcap_{$1}$0
+endsnippet
+
+context "math()"
+snippet uu "\cup" A
+\cup
+endsnippet
+
+context "math()"
+snippet buu "\bigcup_{}^{}" A
+\bigcup_{$1}^{$2}$0
+endsnippet
+
+context "math()"
+snippet bU "\bigcup_{}" A
+\bigcup_{$1}$0
+endsnippet
+
 snippet "([^a-zA-Z0-9\\])px" "\approx" rA
 `!p snip.rv = match.group(1)`\approx 
 endsnippet
@@ -215,6 +305,24 @@ endsnippet
 snippet "([^a-zA-Z0-9\\])eqq" "\equiv" rA
 `!p snip.rv = match.group(1)`\equiv 
 endsnippet
+
+context "math()"
+snippet "([^a-zA-Z0-9\\])NN" "\mathbb{N}" rA
+`!p snip.rv = match.group(1)`\mathbb{N}
+endsnippet
+
+context "math()"
+snippet "([^a-zA-Z0-9\\])RR" "\mathbb{R}" rA
+`!p snip.rv = match.group(1)`\mathbb{R}
+endsnippet
 # ------------------------------------- #
 # END STATIC MATH SNIPPETS
 
+# BEGIN SPACING MATH SNIPPETS
+# ------------------------------------- #
+context "math()"
+snippet ,, ",\," Ai
+,\,
+endsnippet
+# ------------------------------------- #
+# END SPACING MATH SNIPPETS

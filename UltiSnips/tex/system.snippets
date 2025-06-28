@@ -1,3 +1,9 @@
+# Delimiters
+global !p
+def notmath():
+	return vim.eval('vimtex#syntax#in_mathzone()') != '1'
+endglobal
+
 # Various ``system-style'' commands.
 
 # BEGIN PREAMBLE SNIPPETS
@@ -59,11 +65,13 @@ snippet "([\W_])lbl" "\label{} (for creating cross-references and hyperlinks)" r
 `!p snip.rv = match.group(1)`\label{${1:${VISUAL:}}}$0
 endsnippet
 
+context "notmath()"
 snippet "([^a-zA-Z\s])RR" "\ref{}" rA
 `!p snip.rv = match.group(1)`~\ref{${1:${VISUAL:}}}$0
 endsnippet
 
 # one or more white space characters followed by RR
+context "notmath()"
 snippet "[\s]+RR" "\ref{}" rA
 ~\ref{${1:${VISUAL:}}}$0
 endsnippet
@@ -72,8 +80,9 @@ snippet "(^|[\W_])REF" "TODO: reference" rA
 `!p snip.rv = match.group(1)`\TODO{reference}$0
 endsnippet
 
-snippet "(^|[\W_])EE" "\eqref{}" rA
-`!p snip.rv = match.group(1)`\eqref{${1:${VISUAL:}}}$0
+context "notmath()"
+snippet "([\s])EE" "\eqref{}" rA
+~\eqref{${1:${VISUAL:}}}$0
 endsnippet
 # --------------------------------------------- #
 # END REFERENCING SNIPPETS

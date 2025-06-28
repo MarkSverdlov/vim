@@ -7,19 +7,27 @@ endglobal
 # set priority 2 to override snippets in all.snippets
 priority 2
 snippet "(^|[\W])\\\{" "Escaped curly braces \{ ... \}" rA
-`!p snip.rv = match.group(1)`\\{ ${1:${VISUAL:}} \\}$0
+`!p snip.rv = match.group(1)`\\{${1:${VISUAL:}}\\}$0
 endsnippet
 
 snippet "([^a-zA-Z])l\(" "Left/Right parentheses" rA
-`!p snip.rv = match.group(1)`\left( ${1:${VISUAL:}} \right)$0
+`!p snip.rv = match.group(1)`\left(${1:${VISUAL:}}\right)$0
+endsnippet
+
+snippet "([^a-zA-Z])l\|" "Left/Right absoulute value" rA
+`!p snip.rv = match.group(1)`\left\vert${1:${VISUAL:}}\right\vert$0
+endsnippet
+
+snippet "([^a-zA-Z])ln" "Left/Right norm" rA
+`!p snip.rv = match.group(1)`\left\Vert${1:${VISUAL:}}\right\Vert$0
 endsnippet
 
 snippet "([^a-zA-Z])l\[" "Left/Right square brackets" rA
-`!p snip.rv = match.group(1)`\left[ ${1:${VISUAL:}} \right]$0
+`!p snip.rv = match.group(1)`\left[${1:${VISUAL:}}\right]$0
 endsnippet
 
 snippet "([^a-zA-Z])l\{" "Left/Right curly braces" rA
-`!p snip.rv = match.group(1)`\left\\{ ${1:${VISUAL:}} \right\\}$0
+`!p snip.rv = match.group(1)`\left\\{${1:${VISUAL:}}\right\\}$0
 endsnippet
 
 # not math so that " can be used in math to access ',
