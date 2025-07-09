@@ -49,3 +49,6 @@
 [submodule "pack/vendor/start/ultisnips"]
 	path = pack/vendor/start/ultisnips
 	url = https://github.com/SirVer/ultisnips
+[submodule "pack/vendor/start/tabular"]
+	path = pack/vendor/start/tabular
+	url = git@github.com:godlygeek/tabular.git
