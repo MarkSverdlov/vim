@@ -55,6 +55,6 @@
 [submodule "pack/vendor/opt/lualine.nvim"]
 	path = pack/vendor/opt/lualine.nvim
 	url = ssh://git@github.com/nvim-lualine/lualine.nvim.git
-[submodule "pack/vendor/start/vim-tpipeline"]
-	path = pack/vendor/start/vim-tpipeline
+[submodule "pack/vendor/opt/vim-tpipeline"]
+	path = pack/vendor/opt/vim-tpipeline
 	url = ssh://git@github.com/vimpostor/vim-tpipeline.git
