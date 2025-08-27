@@ -61,3 +61,6 @@
 [submodule "pack/vendor/start/orgmode-fork"]
 	path = pack/vendor/start/orgmode-fork
 	url = ssh://git@github.com/MarkSverdlov/orgmode.git
+[submodule "pack/vendor/start/vim-black"]
+	path = pack/vendor/start/vim-black
+	url = git@github.com:EgZvor/vim-black.git
