@@ -38,3 +38,10 @@ Fenton
 submodule
 stderr
 stdout
+Django
+venv
+ctags
+keymap
+ctrl
+CtrlP
+CtrlPBuffer
