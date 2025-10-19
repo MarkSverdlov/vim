@@ -67,3 +67,12 @@
 [submodule "pack/vendor/start/vim-pythonsense"]
 	path = pack/vendor/start/vim-pythonsense
 	url = git@github.com:jeetsukumaran/vim-pythonsense.git
+[submodule "pack/vendor/opt/kitty-scrollback.nvim"]
+	path = pack/vendor/opt/kitty-scrollback.nvim
+	url = git@github.com:mikesmithgh/kitty-scrollback.nvim.git
+[submodule "pack/vendor/start/zenbones.nvim"]
+	path = pack/vendor/start/zenbones.nvim
+	url = git@github.com:zenbones-theme/zenbones.nvim.git
+[submodule "pack/vendor/start/lush.nvim"]
+	path = pack/vendor/start/lush.nvim
+	url = git@github.com:rktjmp/lush.nvim.git
