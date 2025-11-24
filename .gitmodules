@@ -79,3 +79,12 @@
 [submodule "pack/vendor/start/orgmode"]
 	path = pack/vendor/start/orgmode
 	url = git@github.com:nvim-orgmode/orgmode.git
+[submodule "pack/vendor/start/nvim-cmp"]
+	path = pack/vendor/start/nvim-cmp
+	url = git@github.com:hrsh7th/nvim-cmp.git
+[submodule "pack/vendor/start/cmp-nvim-ultisnips"]
+	path = pack/vendor/start/cmp-nvim-ultisnips
+	url = git@github.com:quangnguyen30192/cmp-nvim-ultisnips.git
+[submodule "pack/vendor/start/cmp-nvim-lsp"]
+	path = pack/vendor/start/cmp-nvim-lsp
+	url = git@github.com:hrsh7th/cmp-nvim-lsp.git
