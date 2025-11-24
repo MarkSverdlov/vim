@@ -76,3 +76,6 @@
 [submodule "pack/vendor/start/lush.nvim"]
 	path = pack/vendor/start/lush.nvim
 	url = git@github.com:rktjmp/lush.nvim.git
+[submodule "pack/vendor/start/nvim-lspconfig"]
+	path = pack/vendor/start/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig.git
