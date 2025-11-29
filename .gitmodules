@@ -88,3 +88,6 @@
 [submodule "pack/vendor/start/cmp-nvim-lsp"]
 	path = pack/vendor/start/cmp-nvim-lsp
 	url = git@github.com:hrsh7th/cmp-nvim-lsp.git
+[submodule "pack/vendor/start/iron.nvim"]
+	path = pack/vendor/start/iron.nvim
+	url = git@github.com:Vigemus/iron.nvim.git
