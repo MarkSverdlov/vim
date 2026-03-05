@@ -91,3 +91,6 @@
 [submodule "pack/vendor/start/iron.nvim"]
 	path = pack/vendor/start/iron.nvim
 	url = git@github.com:Vigemus/iron.nvim.git
+[submodule "pack/vendor/start/guttermarks.nvim"]
+	path = pack/vendor/start/guttermarks.nvim
+	url = git@github.com:dimtion/guttermarks.nvim.git
